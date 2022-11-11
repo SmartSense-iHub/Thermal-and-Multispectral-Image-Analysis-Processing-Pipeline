@@ -4,4 +4,4 @@ A digital platform using thermal and multipsectral images to monitor early sympt
 
 The image processing pipeline includes camera distortion, image registration, thermal rescaling, gradient/illumination correction, segmentataion and generating vegetative indices. 
 
-Data available @ https://drive.google.com/file/d/1VSqRu5CUZhyd3MF23kdRjqrtRke7sbJU/view?usp=share_link
+Sample data available @ https://drive.google.com/file/d/1VSqRu5CUZhyd3MF23kdRjqrtRke7sbJU/view?usp=share_link
