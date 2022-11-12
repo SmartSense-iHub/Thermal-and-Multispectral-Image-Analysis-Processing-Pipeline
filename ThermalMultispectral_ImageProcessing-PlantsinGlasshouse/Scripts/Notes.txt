@@ -1,0 +1,32 @@
+Run the codes in the following order:
+Data is available at (https://drive.google.com/file/d/1VSqRu5CUZhyd3MF23kdRjqrtRke7sbJU/view?usp=share_link)
+
+1.fix_imagedistortion 
+- corrects the camera paremeters for the multispectral images
+- sample data stored at "Data\Images_GetDistortion Parameters"
+- this parameters is already calculated for the given cameras, thus can skip this step
+
+
+
+2.tform_rgb_*
+- calculates the transformation matrix for coarse registration for thermal, and multispectral images
+with RGB image.
+- sample data stored at "Data\Images_GetTransformationMatrix"
+- the tform for the data is calculated already for this dataset, you can skip this step or calculate them again
+
+
+3.main
+- code contains all the process with different functions 
+- sample data for test is stored at "Data\Images_Test"
+
+
+Functions used:
+getFullfilenames - to get filenames of images
+fix_imagedistortion - get distortion parameters
+getilluminationadjustment - fix illumination
+getminmaxcalibration - get min and max temperature from thermal image
+getVegetativeIndices - get vegetative indices
+increaseResolution - increase resolution of thermal and multispectral images
+
+natsort - To sort files (used from: Stephen23 (2022). Natural-Order Filename Sort (https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort), MATLAB Central File Exchange. Retrieved November 11, 2022.) 
+natsortfiles - To sort files (used from: Stephen23 (2022). Natural-Order Filename Sort (https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort), MATLAB Central File Exchange. Retrieved November 11, 2022.)
